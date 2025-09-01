@@ -1,1 +1,21 @@
-# quote-of-the-day
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### first link: https://ai.moringaschool.com/ai-software/learning-with-ai/learning-new-language/
