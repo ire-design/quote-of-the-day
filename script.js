@@ -19,35 +19,21 @@ class QuoteApp {
         document.getElementById('quote-author').textContent = '';
 
         try {
-            // Try the API with a timeout of 3 seconds
+            // Try the API with a timeout of 10 seconds
             const controller = new AbortController();
-            const timeout = setTimeout(() => controller.abort(), 3000);
+            const timeout = setTimeout(() => controller.abort(), 10000);
 
-            const response = await fetch('https://api.quotable.io/random', { signal: controller.signal });
+            const response = await fetch('https://favqs.com/api/qotd', { signal: controller.signal });
             clearTimeout(timeout);
 
             const data = await response.json();
             this.currentQuote = { content: data.content, author: data.author };
             this.displayQuote(data.content, data.author);
         } catch (error) {
-            // Try backup quotes.json file
-            try {
-                const localQuotes = await this.fetchLocalQuotes();
-                const random = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-                this.currentQuote = random;
-                this.displayQuote(random.content, random.author);
-            } catch (e) {
-                // Fallback to hardcoded
-                const fallback = this.getFallbackQuote();
-                this.displayQuote(fallback.content, fallback.author);
-            }
+            // Fallback to hardcoded quotes
+            const fallback = this.getFallbackQuote();
+            this.displayQuote(fallback.content, fallback.author);
         }
-    }
-
-    async fetchLocalQuotes() {
-        const response = await fetch('quotes.json');
-        if (!response.ok) throw new Error('Local quotes file not found');
-        return await response.json();
     }
 
     displayQuote(content, author) {
@@ -127,7 +113,15 @@ class QuoteApp {
             { content: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
             { content: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
             { content: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
-            { content: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle" }
+            { content: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle" },
+            { content: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill" },
+            { content: "You miss 100% of the shots you don't take.", author: "Wayne Gretzky" },
+            { content: "Do not wait to strike till the iron is hot; but make it hot by striking.", author: "William Butler Yeats" },
+            { content: "The best way to predict the future is to invent it.", author: "Alan Kay" },
+            { content: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" },
+            { content: "The mind is everything. What you think you become.", author: "Buddha" },
+            { content: "You must be the change you wish to see in the world.", author: "Mahatma Gandhi" },
+            { content: "What you get by achieving your goals is not as important as what you become by achieving your goals.", author: "Zig Ziglar" }
         ];
         const random = quotes[Math.floor(Math.random() * quotes.length)];
         this.currentQuote = random;
