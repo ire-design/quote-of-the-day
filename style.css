@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #8B4513, #D2B48C);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background: rgba(255, 248, 240, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #654321;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.quote-box {
+    margin: 30px 0;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote-text {
+    font-size: 1.3em;
+    color: #654321;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#quote-author {
+    color: #8B4513;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 24px;
+    background: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #A0522D;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.favorites {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #D2B48C;
+}
+
+.favorites h3 {
+    color: #654321;
+    margin-bottom: 15px;
+}
+
+.favorite-item {
+    background: #F5DEB3;
+    padding: 18px 40px 18px 18px; /* Extra space for the remove button */
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.favorite-item .remove {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #D2691E;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        width: 200px;
+    }
+
+    .favorite-item {
+        padding-right: 45px;
+    }
+}
