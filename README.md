@@ -129,23 +129,3 @@ Having issues? Here’s how to get help:
 *"The only way to do great work is to love what you do." – Steve Jobs*
 
 
-
-
-
-
-### first link: https://ai.moringaschool.com/ai-software/learning-with-ai/learning-new-language/
-
-### https://ai.moringaschool.com/ai-software/learning-with-ai/exercises/exercise-new-language/
-
-
-### https://ai.moringaschool.com/ai-software/learning-with-ai/exercises/exercise-sdk-fastapi/
- - "What is FetchAPI and how does it compare to FastAPI and other APIs?"
-
-4. Potential Challenges Coming from Vanilla JS
-Common Challenges:
-
-Asynchronous Operations - Managing fetch requests, promises, and async/await
-Error Handling - Network failures, API rate limits, malformed responses
-State Management - Keeping track of current quote, loading states, user preferences
-DOM Manipulation Complexity - Efficiently updating elements without causing layout thrashing
-CORS Issues - Some quote APIs might have CORS restrictions
