@@ -86,17 +86,12 @@ favoriteQuote() {
 
 ## 5. AI Prompts Used
 
-**Prompt 1**: "I am intermediate-level developer. Guide me in using JavaScript APIs"  
-**Result**: Got architecture with Fetch, Web Share, Local Storage  
-**Rating**: Perfect for beginner project
+**Prompt 1**: "https://ai.moringaschool.com/ai-software/learning-with-ai/learning-new-language/ "
 
-**Prompt 2**: "How to add local fallback for quotes?"  
-**Result**: Added quotes.json and fallback logic  
-**Rating**: Essential for robustness
+**Prompt 2**: "https://ai.moringaschool.com/ai-software/learning-with-ai/exercises/exercise-new-language/"
+-- "What is FetchAPI and how does it compare to FastAPI and other APIs?"
 
-**Prompt 3**: "How to style favourite quotes section?"  
-**Result**: Improved CSS for favourite quotes and remove button  
-**Rating**: Improved usability
+**Prompt 3**: "https://ai.moringaschool.com/ai-software/learning-with-ai/exercises/exercise-sdk-fastapi/ "  
 
 ## 6. Common Issues
 
