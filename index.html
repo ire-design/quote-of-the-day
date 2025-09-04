@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Quote of the Day ✨</h1>
+        
+        <div class="category-selector">
+            <select id="categorySelect">
+                <option value="">All Categories</option>
+                <option value="inspirational">Inspirational</option>
+                <option value="motivational">Motivational</option>
+                <option value="success">Success</option>
+                <option value="wisdom">Wisdom</option>
+                <option value="life">Life</option>
+                <option value="happiness">Happiness</option>
+            </select>
+        </div>
+
+        <div class="quote-container" id="quoteContainer">
+            <div class="loading" id="loading">Loading your daily inspiration...</div>
+            <div class="quote-text" id="quoteText" style="display: none;"></div>
+            <div class="quote-author" id="quoteAuthor" style="display: none;"></div>
+            <div class="error" id="error" style="display: none;"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-primary" id="newQuoteBtn">New Quote</button>
+            <button class="btn-secondary" id="shareBtn" disabled>Share Quote</button>
+            <button class="btn-accent" id="favoriteBtn" disabled>Add to Favorites</button>
+        </div>
+
+        <div class="favorites-section">
+            <div class="favorites-title">💖 Your Favorite Quotes</div>
+            <div class="favorites-list" id="favoritesList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
