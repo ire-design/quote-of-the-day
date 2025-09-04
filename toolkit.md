@@ -93,6 +93,9 @@ favoriteQuote() {
 
 **Prompt 3**: "https://ai.moringaschool.com/ai-software/learning-with-ai/exercises/exercise-sdk-fastapi/ "  
 
+**[](image.png) ![](image-1.png) ![](image-2.png)**
+
+
 ## 6. Common Issues
 
 **Problem**: Quotes not loading  

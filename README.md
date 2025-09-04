@@ -2,6 +2,8 @@
 
 A simple web app that shows inspirational quotes using modern web APIs.
 
+Demo link []
+
 ## Features
 
 - Get random quotes from an API, with local backup if offline
