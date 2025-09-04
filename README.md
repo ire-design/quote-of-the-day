@@ -24,7 +24,6 @@ A simple web app that shows inspirational quotes using modern web APIs.
 ├── index.html      # Main structure
 ├── style.css       # Brown theme styling
 ├── script.js       # App logic with APIs and local fallback
-├── quotes.json     # Backup quotes for offline use
 └── README.md       # This file
 ```
 
@@ -111,6 +110,7 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 - **Quotable API** for providing free inspirational quotes
 - **Web APIs** community for excellent documentation
+- **GenAI tools
 - **Open Source** community for inspiration and resources
 
 ## 📞 Support
