@@ -1,8 +1,7 @@
 # Quote of the Day App
 
-A simple web app that shows inspirational quotes using modern web APIs.
+A simple web app built with the help of GenAI that shows inspirational quotes using modern web APIs.
 
-Demo link []
 
 ## Features
 
